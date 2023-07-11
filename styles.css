@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #9DB2BF;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: white;
+  font-size: 32px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 20px;
+}
+
+.tarjetas, .tarjetasAtaques {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  width: 300px;
+  height: 250px;
+  background: #11468F;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+#boton-mascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;|
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
+
+input {
+  display: none;
+}
+input:checked + label{
+  background-color: red;
+}
+
+#seleccionar-ataque{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Boton-de-Ataque{
+ background-color: #11468F;
+ color: white;
+ padding: 10px;
+ box-sizing: border-box;
+ border-radius: 10px;
+}
+
+#mensajes{
+  width:240px;
+  background-color: #11468F;
+  padding: 20px;
+  margin-top:20px;
+  border-radius: 15px;  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar{
+  border: none;
+  color: #11468F;  
+}
+
+.Ataques{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  background-color: #DD58D6;
+  padding: 20px;
+  margin-top:20px;
+  border-radius: 15px; 
+  justify-items: end;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ataques-Jugador, .ataques-enemigo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 360px){
+  .tarjetas, .tarjetasAtaques{
+    flex-direction: column;
+  }
+}
